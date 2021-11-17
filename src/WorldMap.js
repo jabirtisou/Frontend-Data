@@ -6,6 +6,7 @@ const WorldMap = ({ data, countries }) => {
   useEffect(() => {
     d3.select(map.current).selectAll('*').remove();
 
+    //set width, height and margins
     const margin = { top: 40, bottom: 40, left: 120, right: 20 };
     const width = 800 - margin.left - margin.right;
     const height = 600 - margin.top - margin.bottom;
@@ -17,14 +18,17 @@ const WorldMap = ({ data, countries }) => {
 
     const priceMap = new Map(Object.entries(prices));
 
+    //define one of d3 projections to be used
     const projection = d3
       .geoNaturalEarth1()
       .scale(width / 1.3 / Math.PI)
       .center([-5, 20])
       .translate([width / 2, height / 2]);
 
+    //define path generator
     const path = d3.geoPath().projection(projection);
 
+    //define tooltip
     const tooltip = d3
       .select(map.current)
       .append('div')
@@ -37,6 +41,7 @@ const WorldMap = ({ data, countries }) => {
       .style('position', 'absolute')
       .style('opacity', 0);
 
+    // append svg to the chart div
     const svg = d3
       .select(map.current)
       .append('svg')
@@ -51,17 +56,20 @@ const WorldMap = ({ data, countries }) => {
 
     const paths = svg.append('g').selectAll('path').data(data.features);
 
+    // update the state the on the paths
     paths
       .enter()
       .append('path')
       .attr('d', path)
       .merge(paths)
+      // set the color of the country if available else use default color
       .attr('fill', (d) =>
         priceMap.get(d.properties.name) ? 'orange' : '#262830'
       )
       .attr('stroke', '#fff')
       .attr('stroke-width', 0.5)
       .style('cursor', 'pointer')
+      //set hover over country
       .on('mouseover', function (e, d) {
         tooltip.transition().duration(200).style('opacity', 0.9);
 
@@ -70,7 +78,7 @@ const WorldMap = ({ data, countries }) => {
             priceMap.get(d.properties.name) ? 'orange' : '#262830'
           )
           .style('opacity', 0.4);
-
+        //set the data in tooltip as well the position
         tooltip
           .html(
             `<div>${d.properties.name}: <span class='tooltip-value'>${
@@ -87,6 +95,7 @@ const WorldMap = ({ data, countries }) => {
           .style('left', e.pageX - 20 + 'px')
           .style('top', e.pageY - 50 + 'px');
       })
+      //set what happens when the cursor leaves a country
       .on('mouseout', function (d) {
         d3.select(this)
           .style('fill', (d) =>

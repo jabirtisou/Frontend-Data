@@ -19,6 +19,7 @@ export const getData = async (year) => {
       (d) => new Date(d.date).getFullYear() === year
     );
 
+    // delete double values
     const uniqueCountries = [
       ...new Map(countryByYear.map((item) => [item.name, item])).values(),
     ];
