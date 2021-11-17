@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Student's First BarChart</h1>
+      <h1>BigMac Price Index</h1>
       <div className='year'>
         <p>Select a year: </p>
         <select value={year} onChange={handleChange}>
