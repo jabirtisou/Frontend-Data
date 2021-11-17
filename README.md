@@ -78,20 +78,20 @@ yarn start
 Bij het starten van de server kan je het openen op je http://localhost:3000.
 
 ### 📽 Output
-Output Week1 Enquete Dataset 
+Barchart
     <br />
 
-<img src="https://github.com/jabirtisou/Functional-Programming/blob/main/Wiki_images/OutputEnqueteDataset.png" width='50%' alt="Logo" /> 
-Output Week2 Big Mac Price Index 
+<img src="https://github.com/jabirtisou/frontend-data/blob/main/Wiki_images/Schermafbeelding%202021-11-17%20om%2023.10.32.png" width='50%' alt="Logo" /> 
+Wereldmap
     <br />
 
-<img src="https://github.com/jabirtisou/Functional-Programming/blob/main/Wiki_images/OutputBigMacPriceIndex.png" width='50%' alt="Logo" />
+<img src="https://github.com/jabirtisou/frontend-data/blob/main/Wiki_images/Schermafbeelding%202021-11-17%20om%2023.10.42.png" width='50%' alt="Logo" />
 
 
 
-## 📂 Dataset van de enquête
+## 📂 Dataset
 
-<img src="https://github.com/jabirtisou/Functional-Programming/blob/main/Wiki_images/EnqueteDataset.png" alt="Logo" />
+<img src="https://github.com/jabirtisou/frontend-data/blob/main/Wiki_images/Schermafbeelding%202021-11-17%20om%2023.16.25.png" alt="Logo" />
 
 <!-- LICENSE -->
 ## 🔗 License
@@ -105,7 +105,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - Jabir Tisoudali 
 
-Project Link: [https://github.com/jabirtisou/Functional-Programming](https://github.com/jabirtisou/Functional-Programming)
+Project Link: [https://github.com/jabirtisou/frontend-data](https://github.com/jabirtisou/frontend-data)
 
 
 
@@ -117,14 +117,14 @@ Project Link: [https://github.com/jabirtisou/Functional-Programming](https://git
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/jabirtisou/Functional-Programming.svg?style=for-the-badge
-[contributors-url]: https://github.com/jabirtisou/Functional-Programming/graphs/contributors
+[contributors-url]: https://github.com/jabirtisou/frontend-data/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/jabirtisou/Functional-Programming.svg?style=for-the-badge
-[forks-url]: https://github.com/jabirtisou/Functional-Programming/network/members
+[forks-url]: https://github.com/jabirtisou/frontend-data/network/members
 [stars-shield]: https://img.shields.io/github/stars/jabirtisou/Functional-Programming.svg?style=for-the-badge
-[stars-url]: https://github.com/jabirtisou/CMDBlokTech/stargazers
+[stars-url]: https://github.com/jabirtisou/frontend-data/stargazers
 [issues-shield]: https://img.shields.io/github/issues/jabirtisou/Functional-Programming.svg?style=for-the-badge
-[issues-url]: https://github.com/jabirtisou/Functional-Programming/issues
+[issues-url]: https://github.com/jabirtisou/frontend-data/issues
 [license-shield]: https://img.shields.io/github/license/jabirtisou/CMDBlokTech.svg?style=for-the-badge
-[license-url]: https://github.com/jabirtisou/Functional-Programming/blob/main/LICENSE
+[license-url]: https://github.com/jabirtisou/frontend-data/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jabir-tisoudali/
